@@ -1,16 +1,16 @@
 package Week7;
 
-import com.mysql.cj.log.Log;
+//import com.mysql.cj.log.Log;
 
 interface Logger{
     void logMessage(String message);
 }
 record RecordLogger(String loggerName) implements Logger{
 
-    @Override
-    public void logMessage(String message){
-        System.out.println("["+loggerName+"] "+message);
-    }
+        @Override
+        public void logMessage(String message){
+            System.out.println("["+loggerName+"] "+message);
+        }
 }
 class ClassLogger implements Logger{
     private String classLoggerName;
