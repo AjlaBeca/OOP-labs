@@ -7,10 +7,10 @@ interface Logger{
 }
 record RecordLogger(String loggerName) implements Logger{
 
-        @Override
-        public void logMessage(String message){
-            System.out.println("["+loggerName+"] "+message);
-        }
+    @Override
+    public void logMessage(String message){
+        System.out.println("["+loggerName+"] "+message);
+    }
 }
 class ClassLogger implements Logger{
     private String classLoggerName;
